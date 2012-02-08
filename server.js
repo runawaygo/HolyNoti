@@ -1,28 +1,19 @@
-var express = require('express'),
-	app = express.createServer();
+var connect = require('connect');
 
-var fs = require('fs');
-
-app.use(express.logger({ format: ':method :url :status' }));
-app.use(express.bodyParser());
-app.use(express.cookieParser());
-app.use(express.session({ secret: 'superwolf' }));
-app.use(app.router);
-
-
-app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-app.use('/client',express.static(__dirname + '/client',{ cache:false}));
-app.error(function(err, req, res){
-	console.log("500:" + err + " file:" + req.url)
-	res.render('500');
-});
-
-
-app.get('/', function(req, res){
-	res.redirect('/client/index.html');
-});
-
-var port = process.env.PORT || 8888;
+var port = process.env.PORT || 8000;
 console.log("service run on " + port);
 
-app.listen(port);
+
+app = connect()
+.use(connect.logger({ format: ':method :url :status' }))
+.use(connect.bodyParser())
+.use(connect.cookieParser())
+.use(connect.session({ secret: 'superwolf' }))
+.use(connect.errorHandler({ dumpExceptions: true, showStack: true }))
+.use(connect.bodyParser())
+.listen(port);
+
+app
+.use('/', connect.static(__dirname + '/client/'))
+.use('/client', connect.static(__dirname + '/client/'));
+

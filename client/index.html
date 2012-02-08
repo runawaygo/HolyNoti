@@ -3,61 +3,63 @@
 	<head>
 		<title>Harmony</title>
 		<meta charset="utf-8"/>
-		<meta name="description" content="clean website template"/>
-		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="starter index"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" />
-		<link rel="apple-touch-startup-image" sizes="768x1004" href="apple-touch-startup-image-768x1004.png" />
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	    <!-- Le fav and touch icons -->
+	    <link rel="shortcut icon" href="images/favicon.ico">
+	    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">		
 		
-		<link rel="stylesheet" href="/client/css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<link rel="stylesheet/less" href="/client/css/index.less" type="text/css" media="screen" title="no title" charset="utf-8">
-		<script>
-		function BlockMove(event) {
-			// Tell Safari not to move the window.
-			event.preventDefault() ;
-		}
-		</script>
-		</head>
-		<body ontouchmove="BlockMove(event);" >
-		<div class="topbar">
-	    	<div class="fill">
-	        	<div class="container-fluid">
-	          		<a class="brand" href="#">Title</a>
-	          		<ul class="nav">
-	            		<li class="active"><a href="#">First</a></li>
-	            		<li><a href="#about">Second</a></li>
-	            		<li><a href="#contact">Third</a></li>
-						<li><input type='search' style="margin-top:5px;margin-left:20px;"></li>
-	          		</ul>
-	          		<p class="pull-right"><a href="#"><strong>Superwolf</strong></a></p>
-					
-	        	</div>
-	      	</div>
+	    <!-- Le styles -->	
+		<link rel="stylesheet" href="/client/bootstrap/css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link href="/client/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<style>
+	      body {
+	        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	      }
+	    </style>			  
+	    
+	</head>
+	<body>
+	    <div class="navbar navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">
+	          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </a>
+	          <a class="brand" href="#">Project name</a>
+	          <div class="nav-collapse">
+	            <ul class="nav">
+	              <li class="active"><a href="#">Home</a></li>
+	              <li><a href="#about">About</a></li>
+	              <li><a href="#contact">Contact</a></li>
+	            </ul>
+	          </div><!--/.nav-collapse -->
+	        </div>
+	      </div>
 	    </div>
-		<div id='container'>
-			<h1>Supewolf</h1>
-			<div id='content'>
-				
-			</div>
-		</div>
-	
-		<script src="/client/index.coffee" type="text/coffeescript"></script>		
-		<script src="/client/lib/less.js" type="text/javascript" charset="utf-8"></script>	
-		<script src="/client/lib/json2.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/client/lib/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/client/lib/jquery-ui-1.8.16.custom.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/client/lib/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/client/lib/underscore-1.1.6.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/client/lib/backbone.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="/client/lib/bootstrap/bootstrap-modal.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/client/lib/bootstrap/bootstrap-twipsy.js" type="text/javascript" charset="utf-8"></script>		
-		<script type="text/javascript" src="/client/FollowingData.js"></script>		
-		<script type="text/javascript" src="/client/index.js"></script>
-		<script src="/client/lib/coffee-script.js" type="text/javascript" charset="utf-8"></script>
+
+	    <div class="container">
+
+	      <h1>Bootstrap starter template</h1>
+	      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+
+	    </div> <!-- /container -->
+		<script id="personTemplate" type="text/x-jquery-tmpl">
+	    </script>
+		<script src="/client/lib/less.js"></script>
+		<script src="/client/lib/coffee-script.js"></script>
+		<script src="/client/seajs/LAB.min.js"></script>
+		<script src="/client/seajs/sea.js" data-main="./index"></script>
 	</body>
 </html>
