@@ -1,4 +1,4 @@
 define (require, exports) ->
 	$(->	
-		console.log 'start'
+		console.log 'coffee start'
 	)

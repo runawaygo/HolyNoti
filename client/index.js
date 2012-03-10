@@ -6,23 +6,16 @@ seajs.config({
 
 
 define(function(require) {
-	console.log('begin');
+	console.log('seajs start');
 	$LAB
-	.script('/client/lib/less.js')
-	.script('/client/lib/json2.js')
-	.script('/client/lib/jquery-1.7.1.min.js')
-	.script('/client/lib/jquery.tmpl.js')
-	.script('/client/lib/underscore-1.3.1.js').wait()
-	.script('/client/lib/backbone.js')
-	.script('/client/bootstrap/js/bootstrap.js').wait(function(){
+	.script('./lib/less.js')
+	.script('./lib/json2.js')
+	.script('./lib/jquery-1.7.1.min.js')
+	.script('./lib/jquery.tmpl.js')
+	.script('./lib/underscore-1.3.1.js').wait()
+	.script('./lib/backbone.js')
+	.script('./bootstrap/js/bootstrap.js').wait(function(){
 		require('index.coffee');	
 		require('index.less');
 	})
-	
-
-	// var Constellation = require('./logic/constellation.coffee');
-	// 
-	// var dd =new Constellation.Constellation();
-	// 
-	// console.log(dd);
 });
