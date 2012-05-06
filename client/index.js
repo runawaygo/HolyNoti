@@ -1,5 +1,5 @@
 seajs.config({
-	base: 'http://127.0.0.1:8000/client/',
+	base: './',
 	debug:true,
   	preload: ['plugin-coffee', 'plugin-less']
 });
