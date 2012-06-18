@@ -14,7 +14,20 @@ define(function(require) {
 	.script('./lib/jquery.tmpl.js')
 	.script('./lib/underscore-1.3.1.js').wait()
 	.script('./lib/backbone.js')
-	.script('./bootstrap/js/bootstrap.js').wait(function(){
+	.script('./bootstrap/js/google-code-prettify/prettify.js')
+	.script('./bootstrap/js/bootstrap-transition.js')
+	.script('./bootstrap/js/bootstrap-alert.js')
+	.script('./bootstrap/js/bootstrap-modal.js')
+	.script('./bootstrap/js/bootstrap-dropdown.js')
+	.script('./bootstrap/js/bootstrap-scrollspy.js')
+	.script('./bootstrap/js/bootstrap-tab.js')
+	.script('./bootstrap/js/bootstrap-tooltip.js')
+	.script('./bootstrap/js/bootstrap-popover.js')
+	.script('./bootstrap/js/bootstrap-button.js')
+	.script('./bootstrap/js/bootstrap-collapse.js')
+	.script('./bootstrap/js/bootstrap-carousel.js')
+	.script('./bootstrap/js/bootstrap-typeahead.js')
+	.wait(function(){
 		require('index.coffee');	
 		require('index.less');
 	})
