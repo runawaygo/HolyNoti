@@ -1,0 +1,273 @@
+@import 'bootstrap/css/bootstrap.css';
+
+@import 'bootstrap/css/bootstrap-responsive.css';
+
+@import 'css/animate.css';
+.animated-delay-01 {
+  -webkit-animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  -ms-animation-duration: 100ms;
+  -o-animation-duration: 100ms;
+  animation-duration: 100ms;
+}
+.animated-delay-03 {
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+.animated-delay-05 {
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+.animated-delay-07 {
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+.animated-delay-09 {
+  -webkit-animation-duration: 900ms;
+  -moz-animation-duration: 900ms;
+  -ms-animation-duration: 900ms;
+  -o-animation-duration: 900ms;
+  animation-duration: 900ms;
+}
+.animated-delay-11 {
+  -webkit-animation-duration: 1100ms;
+  -moz-animation-duration: 1100ms;
+  -ms-animation-duration: 1100ms;
+  -o-animation-duration: 1100ms;
+  animation-duration: 1100ms;
+}
+.animated-delay-13 {
+  -webkit-animation-duration: 1300ms;
+  -moz-animation-duration: 1300ms;
+  -ms-animation-duration: 1300ms;
+  -o-animation-duration: 1300ms;
+  animation-duration: 1300ms;
+}
+html,
+body,
+iframe {
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+ul li {
+  height: 50px;
+  -webkit-user-select: none;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 200ms 0 ease-in-out;
+  -moz-transition: all 200ms 0 ease-in-out;
+  -ms-transition: all 200ms 0 ease-in-out;
+  -o-transition: all 200ms 0 ease-in-out;
+  transition: all 200ms 0 ease-in-out;
+}
+#app {
+  position: relative;
+  background-color: #fff;
+  background-image: url(../img/grid-18px-masked.png);
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+  width: 100%;
+  height: 100%;
+}
+#app ul.list-list.editing li,
+#app ul.item-list.editing li {
+  opacity: 0.2;
+}
+#app ul.list-list.editing li.editing,
+#app ul.item-list.editing li.editing {
+  opacity: 1;
+}
+#app ul.list-list li,
+#app ul.item-list li {
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bolder;
+  -webkit-box-shadow: #999999 0 1px 1px;
+  -moz-box-shadow: #999999 0 1px 1px;
+  box-shadow: #999999 0 1px 1px;
+  text-shadow: #999999 0 0 1px;
+}
+#app ul.list-list li section,
+#app ul.item-list li section {
+  height: 100%;
+  width: 100%;
+}
+#app ul.list-list li section.edited,
+#app ul.item-list li section.edited {
+  display: block;
+}
+#app ul.list-list li section.editing,
+#app ul.item-list li section.editing {
+  display: none;
+}
+#app ul.list-list li div,
+#app ul.item-list li div {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-user-select: none;
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  display: inline-block;
+  width: auto;
+  position: relative;
+  -webkit-transition: all 200ms 0 ease-in-out;
+  -moz-transition: all 200ms 0 ease-in-out;
+  -ms-transition: all 200ms 0 ease-in-out;
+  -o-transition: all 200ms 0 ease-in-out;
+  transition: all 200ms 0 ease-in-out;
+}
+#app ul.list-list li div .delete-line,
+#app ul.item-list li div .delete-line {
+  padding: 0px;
+  z-index: 2;
+  display: block;
+  position: absolute;
+  -webkit-transition: all 0 0 ease-in-out;
+  -moz-transition: all 0 0 ease-in-out;
+  -ms-transition: all 0 0 ease-in-out;
+  -o-transition: all 0 0 ease-in-out;
+  transition: all 0 0 ease-in-out;
+  -webkit-transform: scalex(0);
+  -moz-transform: scalex(0);
+  -ms-transform: scalex(0);
+  -o-transform: scalex(0);
+  transform: scalex(0);
+  -webkit-transform-origin: 0;
+  -moz-transform-origin: 0;
+  -ms-transform-origin: 0;
+  -o-transform-origin: 0;
+  transform-origin: 0;
+  background-color: #eee;
+  height: 3px;
+  left: 21px;
+  right: 1px;
+  text-align: center;
+  top: 25px;
+}
+#app ul.list-list li div.count,
+#app ul.item-list li div.count {
+  text-align: center;
+  padding: 10px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  background-color: rgba(150, 150, 150, 0.3);
+  right: 0px;
+  top: 0px;
+}
+#app ul.list-list li input,
+#app ul.item-list li input {
+  font-weight: bolder;
+  padding: 10px 0px 10px 20px;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: transparent;
+  border: 0px solid black;
+  -webkit-appearance: none;
+}
+#app ul.list-list li:nth-child(2n+1),
+#app ul.item-list li:nth-child(2n+1) {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+#app ul.list-list li.hover,
+#app ul.item-list li.hover {
+  text-shadow: #333333 0 0 1px;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #eee;
+  -webkit-transition: all 0 0 ease-in-out;
+  -moz-transition: all 0 0 ease-in-out;
+  -ms-transition: all 0 0 ease-in-out;
+  -o-transition: all 0 0 ease-in-out;
+  transition: all 0 0 ease-in-out;
+  -webkit-transition: background-color 200ms 0 ease-in-out;
+  -moz-transition: background-color 200ms 0 ease-in-out;
+  -ms-transition: background-color 200ms 0 ease-in-out;
+  -o-transition: background-color 200ms 0 ease-in-out;
+  transition: background-color 200ms 0 ease-in-out;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+#app ul.list-list li.moving,
+#app ul.item-list li.moving {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 4px #000000;
+  -moz-box-shadow: 0px 0px 4px #000000;
+  box-shadow: 0px 0px 4px #000000;
+}
+#app ul.list-list li.doing,
+#app ul.item-list li.doing {
+  background-color: green;
+}
+#app ul.list-list li.doing div,
+#app ul.item-list li.doing div {
+  color: white;
+}
+#app ul.list-list li.doing div .delete-line,
+#app ul.item-list li.doing div .delete-line {
+  background-color: white;
+}
+#app ul.list-list li.done,
+#app ul.item-list li.done {
+  opacity: 0.8;
+}
+#app ul.list-list li.done div,
+#app ul.item-list li.done div {
+  color: #aaa;
+}
+#app ul.list-list li.done div .delete-line,
+#app ul.item-list li.done div .delete-line {
+  background-color: #aaa;
+  -webkit-transform: scalex(1);
+  -moz-transform: scalex(1);
+  -ms-transform: scalex(1);
+  -o-transform: scalex(1);
+  transform: scalex(1);
+}
+#app ul.list-list li.removing,
+#app ul.item-list li.removing {
+  background-color: red;
+}
+#app ul.list-list li.editing section.edited,
+#app ul.item-list li.editing section.edited {
+  display: none;
+}
+#app ul.list-list li.editing section.editing,
+#app ul.item-list li.editing section.editing {
+  display: block;
+}
+#debug-container {
+  display: none;
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: red;
+}
