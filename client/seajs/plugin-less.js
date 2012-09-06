@@ -3,7 +3,7 @@
  * @fileoverview The LESS plugin.
  */
 
-define('plugin-less', ['plugin-base'], function(require) {
+define('plugin-less', ['plugin-base', 'less'], function(require) {
 
   var plugin = require('plugin-base');
   var less = window.less;
@@ -12,10 +12,10 @@ define('plugin-less', ['plugin-base'], function(require) {
   plugin.add({
     name: 'less',
 
-    ext: ['.less', '#less'],
+    ext: ['.less'],
 
     load: function(url, callback) {
-      return less.Parser.importer(url, [], function(tree) {
+      less.Parser.importer(url, [], function(tree) {
         createCSS(tree.toCSS(), url.replace(/[^\w]/g, '_'));
         callback();
       }, {});

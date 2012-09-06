@@ -1,577 +1,816 @@
 info it worked if it ends with ok
-verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
-info using npm@1.0.27
-info using node@v0.5.0-pre
+verbose cli [ '/Users/runaway/development/GitReponsitroies/noti_holy/node',
+verbose cli   '/usr/local/bin/npm',
+verbose cli   '-g',
+verbose cli   'install',
+verbose cli   'weinre' ]
+info using npm@1.1.2
+info using node@v0.7.5-pre
+verbose /Users/runaway/development/GitReponsitroies/noti_holy/node node symlink
 verbose config file /Users/runaway/.npmrc
-verbose config file /usr/local/etc/npmrc
-silly testEngine { name: 'node-todo-example',
-silly testEngine   version: '0.0.1',
-silly testEngine   dependencies: 
-silly testEngine    { express: '',
-silly testEngine      nodeunit: '',
-silly testEngine      underscore: '',
-silly testEngine      mongodb: '',
-silly testEngine      mongoose: '',
-silly testEngine      canvas: '' },
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { dev: true,
-silly testEngine      file: '/Users/runaway/development/GitReponsitroies/canvas-video/package.json',
-silly testEngine      wscript: false,
-silly testEngine      contributors: false,
-silly testEngine      serverjs: true },
-silly testEngine   _id: 'node-todo-example@0.0.1',
-silly testEngine   scripts: { start: 'node server.js' },
-silly testEngine   devDependencies: {},
-silly testEngine   engines: { node: '*' },
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/package.json
-verbose loadDefaults node-todo-example@0.0.1
-verbose where, deps [ '/Users/runaway/development/GitReponsitroies/canvas-video',
-verbose where, deps   [ 'express',
-verbose where, deps     'nodeunit',
-verbose where, deps     'underscore',
-verbose where, deps     'mongodb',
-verbose where, deps     'mongoose',
-verbose where, deps     'canvas' ] ]
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/package.json
-info preinstall node-todo-example@0.0.1
-silly testEngine { name: 'express',
-silly testEngine   description: 'Sinatra inspired web development framework',
-silly testEngine   version: '2.4.7',
-silly testEngine   author: 
-silly testEngine    { name: 'TJ Holowaychuk',
-silly testEngine      email: 'tj@vision-media.ca' },
-silly testEngine   contributors: 
-silly testEngine    [ { name: 'TJ Holowaychuk',
-silly testEngine        email: 'tj@vision-media.ca' },
-silly testEngine      { name: 'Aaron Heckmann',
-silly testEngine        email: 'aaron.heckmann+github@gmail.com' },
-silly testEngine      { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
-silly testEngine      { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
-silly testEngine   dependencies: 
-silly testEngine    { connect: '1.7.x',
-silly testEngine      mime: '>= 0.0.1',
-silly testEngine      qs: '>= 0.3.1',
-silly testEngine      mkdirp: '0.0.7' },
-silly testEngine   devDependencies: 
-silly testEngine    { 'connect-form': '0.2.1',
-silly testEngine      ejs: '0.4.2',
-silly testEngine      expresso: '0.7.2',
-silly testEngine      hamljs: '0.5.1',
-silly testEngine      jade: '0.11.0',
-silly testEngine      stylus: '0.13.0',
-silly testEngine      should: '0.2.1',
-silly testEngine      'express-messages': '0.0.2',
-silly testEngine      'node-markdown': '>= 0.0.1',
-silly testEngine      'connect-redis': '>= 0.0.1' },
-silly testEngine   keywords: [ 'framework', 'sinatra', 'web', 'rest', 'restful' ],
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/visionmedia/express.git' },
-silly testEngine   main: 'index',
-silly testEngine   bin: { express: './bin/express' },
-silly testEngine   scripts: { test: 'make test', prepublish: 'npm prune' },
-silly testEngine   engines: { node: '>= 0.4.1 < 0.5.0' },
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/express/package.json',
-silly testEngine      wscript: false,
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false },
-silly testEngine   _id: 'express@2.4.7',
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/express/package.json
-verbose loadDefaults express@2.4.7
-silly testEngine { name: 'mongodb',
-silly testEngine   description: 'A node.js driver for MongoDB',
-silly testEngine   keywords: [ 'mongodb', 'mongo', 'driver', 'db' ],
-silly testEngine   version: '0.9.6-10',
-silly testEngine   author: 
-silly testEngine    { name: 'Christian Amor Kvalheim',
-silly testEngine      email: 'christkv@gmail.com' },
-silly testEngine   contributors: 
-silly testEngine    [ { name: 'Aaron Heckmann' },
-silly testEngine      { name: 'Christoph Pojer' },
-silly testEngine      { name: 'Pau Ramon Revilla' },
-silly testEngine      { name: 'Nathan White' },
-silly testEngine      { name: 'Emmerman' },
-silly testEngine      { name: 'Seth LaForge' },
-silly testEngine      { name: 'Boris Filipov' },
-silly testEngine      { name: 'Stefan Schärmeli' },
-silly testEngine      { name: 'Tedde Lundgren' },
-silly testEngine      { name: 'renctan' },
-silly testEngine      { name: 'Sergey Ukustov' },
-silly testEngine      { name: 'Ciaran Jessup' },
-silly testEngine      { name: 'kuno' },
-silly testEngine      { name: 'srimonti' },
-silly testEngine      { name: 'Erik Abele' },
-silly testEngine      { name: 'Pratik Daga' },
-silly testEngine      { name: 'Slobodan Utvic' },
-silly testEngine      { name: 'Kristina Chodorow' },
-silly testEngine      { name: 'Yonathan Randolph' },
-silly testEngine      { name: 'Brian Noguchi' },
-silly testEngine      { name: 'Sam Epstein' },
-silly testEngine      { name: 'James Harrison Fisher' },
-silly testEngine      { name: 'Vladimir Dronnikov' },
-silly testEngine      { name: 'Ben Hockey' },
-silly testEngine      { name: 'Henrik Johansson' },
-silly testEngine      { name: 'Simon Weare' },
-silly testEngine      { name: 'Alex Gorbatchev' },
-silly testEngine      { name: 'Shimon Doodkin' },
-silly testEngine      { name: 'Kyle Mueller' },
-silly testEngine      { name: 'Eran Hammer-Lahav' },
-silly testEngine      { name: 'Marcin Ciszak' },
-silly testEngine      { name: 'François de Metz' },
-silly testEngine      { name: 'Vinay Pulim' },
-silly testEngine      { name: 'nstielau' },
-silly testEngine      { name: 'Adam Wiggins' },
-silly testEngine      { name: 'entrinzikyl' },
-silly testEngine      { name: 'Jeremy Selier' },
-silly testEngine      { name: 'Ian Millington' },
-silly testEngine      { name: 'Public Keating' },
-silly testEngine      { name: 'andrewjstone' },
-silly testEngine      { name: 'Christopher Stott' },
-silly testEngine      { name: 'Corey Jewett' },
-silly testEngine      { name: 'brettkiefer' },
-silly testEngine      { name: 'Rob Holland' },
-silly testEngine      { name: 'Senmiao Liu' },
-silly testEngine      { name: 'heroic' },
-silly testEngine      { name: 'gitfy' } ],
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/christkv/node-mongodb-native.git' },
-silly testEngine   bugs: 
-silly testEngine    { email: 'node-mongodb-native@googlegroups.com',
-silly testEngine      url: 'http://github.com/christkv/node-mongodb-native/issues' },
-silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
-silly testEngine   config: { native: false },
-silly testEngine   main: './lib/mongodb/index',
-silly testEngine   directories: { lib: './lib/mongodb' },
-silly testEngine   engines: { node: '>=0.4.0' },
-silly testEngine   scripts: { install: 'bash ./install.sh' },
-silly testEngine   licenses: 
-silly testEngine    [ { type: 'Apache License, Version 2.0',
-silly testEngine        url: 'http://www.apache.org/licenses/LICENSE-2.0' } ],
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/mongodb/package.json',
-silly testEngine      wscript: false,
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false },
-silly testEngine   _id: 'mongodb@0.9.6-10',
-silly testEngine   dependencies: {},
-silly testEngine   devDependencies: {},
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/mongodb/package.json
-verbose loadDefaults mongodb@0.9.6-10
-silly testEngine { name: 'mongoose',
-silly testEngine   description: 'Mongoose MongoDB ORM',
-silly testEngine   version: '2.1.2',
-silly testEngine   author: 
-silly testEngine    { name: 'Guillermo Rauch',
-silly testEngine      email: 'guillermo@learnboost.com' },
-silly testEngine   keywords: 
-silly testEngine    [ 'mongodb',
-silly testEngine      'mongoose',
-silly testEngine      'orm',
-silly testEngine      'data',
-silly testEngine      'datastore',
-silly testEngine      'nosql' ],
-silly testEngine   dependencies: { hooks: '0.1.9', mongodb: '0.9.6-7', colors: '0.5.0' },
-silly testEngine   devDependencies: { should: '0.2.1', gleak: '0.1.0' },
-silly testEngine   directories: { lib: './lib/mongoose' },
-silly testEngine   scripts: { test: 'make test' },
-silly testEngine   main: './index.js',
-silly testEngine   engines: { node: '>= 0.4.0' },
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/LearnBoost/mongoose.git' },
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/mongoose/package.json',
-silly testEngine      wscript: false,
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false },
-silly testEngine   _id: 'mongoose@2.1.2',
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/mongoose/package.json
-verbose loadDefaults mongoose@2.1.2
-silly testEngine { name: 'nodeunit',
-silly testEngine   description: 'Easy unit testing for node.js and the browser.',
-silly testEngine   maintainers: 
-silly testEngine    [ { name: 'Caolan McMahon',
-silly testEngine        url: 'https://github.com/caolan' } ],
-silly testEngine   contributors: 
-silly testEngine    [ { name: 'Alex Gorbatchev',
-silly testEngine        url: 'https://github.com/alexgorbatchev' },
-silly testEngine      { name: 'Alex Wolfe',
-silly testEngine        url: 'https://github.com/alexkwolfe' },
-silly testEngine      { name: 'Carl Fürstenberg',
-silly testEngine        url: 'https://github.com/azatoth' },
-silly testEngine      { name: 'Gerad Suyderhoud',
-silly testEngine        url: 'https://github.com/gerad' },
-silly testEngine      { name: 'Kadir Pekel',
-silly testEngine        url: 'https://github.com/coffeemate' },
-silly testEngine      { name: 'Oleg Efimov',
-silly testEngine        url: 'https://github.com/Sannis' },
-silly testEngine      { name: 'Orlando Vazquez',
-silly testEngine        url: 'https://github.com/orlandov' },
-silly testEngine      { name: 'Ryan Dahl', url: 'https://github.com/ry' },
-silly testEngine      { name: 'Sam Stephenson',
-silly testEngine        url: 'https://github.com/sstephenson' },
-silly testEngine      { name: 'Thomas Mayfield',
-silly testEngine        url: 'https://github.com/thegreatape' },
-silly testEngine      { name: 'Elijah Insua',
-silly testEngine        email: 'tmpvar@gmail.com',
-silly testEngine        url: 'http://tmpvar.com' } ],
-silly testEngine   version: '0.5.3',
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/caolan/nodeunit.git' },
-silly testEngine   bugs: { url: 'http://github.com/caolan/nodeunit/issues' },
-silly testEngine   licenses: 
-silly testEngine    [ { type: 'MIT',
-silly testEngine        url: 'http://github.com/caolan/nodeunit/raw/master/LICENSE' } ],
-silly testEngine   directories: { lib: './lib', doc: './doc', man: './man1' },
-silly testEngine   bin: { nodeunit: './bin/nodeunit' },
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/nodeunit/package.json',
-silly testEngine      wscript: false,
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false },
-silly testEngine   _id: 'nodeunit@0.5.3',
-silly testEngine   dependencies: {},
-silly testEngine   devDependencies: {},
-silly testEngine   engines: { node: '*' },
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true,
-silly testEngine   man: [ 'man1/nodeunit.1' ] }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/nodeunit/package.json
-verbose loadDefaults nodeunit@0.5.3
-silly testEngine { name: 'underscore',
-silly testEngine   description: 'JavaScript\'s functional programming helper library.',
-silly testEngine   homepage: 'http://documentcloud.github.com/underscore/',
-silly testEngine   keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
-silly testEngine   author: 
-silly testEngine    { name: 'Jeremy Ashkenas',
-silly testEngine      email: 'jeremy@documentcloud.org' },
-silly testEngine   contributors: [],
-silly testEngine   dependencies: {},
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/documentcloud/underscore.git' },
-silly testEngine   main: 'underscore.js',
-silly testEngine   version: '1.1.7',
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/underscore/package.json',
-silly testEngine      wscript: false,
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false },
-silly testEngine   _id: 'underscore@1.1.7',
-silly testEngine   devDependencies: {},
-silly testEngine   engines: { node: '*' },
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/underscore/package.json
-verbose loadDefaults underscore@1.1.7
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/package.json
-verbose into /Users/runaway/development/GitReponsitroies/canvas-video [ 'express@',
-verbose into /Users/runaway/development/GitReponsitroies/canvas-video   'nodeunit@',
-verbose into /Users/runaway/development/GitReponsitroies/canvas-video   'underscore@',
-verbose into /Users/runaway/development/GitReponsitroies/canvas-video   'mongodb@',
-verbose into /Users/runaway/development/GitReponsitroies/canvas-video   'mongoose@',
-verbose into /Users/runaway/development/GitReponsitroies/canvas-video   'canvas@' ]
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/express/package.json
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/mongodb/package.json
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/mongoose/package.json
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/nodeunit/package.json
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/underscore/package.json
-verbose already installed in /Users/runaway/development/GitReponsitroies/canvas-video skipping mongodb@
-verbose already installed in /Users/runaway/development/GitReponsitroies/canvas-video skipping mongoose@
-verbose cache add canvas@
-verbose cache add [ 'canvas@', null ]
-silly cache add: name, spec, args [ undefined, 'canvas@', [ 'canvas@', null ] ]
-verbose parsed url { pathname: 'canvas@', href: 'canvas@' }
-silly cache add: name, spec, args [ 'canvas', '', [ 'canvas', '' ] ]
-verbose parsed url { href: '' }
-info addNamed [ 'canvas', '' ]
+verbose config file /Users/runaway/development/GitReponsitroies/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose cache add [ 'weinre', null ]
+silly cache add: name, spec, args [ undefined, 'weinre', [ 'weinre', null ] ]
+verbose parsed url { pathname: 'weinre', path: 'weinre', href: 'weinre' }
+verbose addNamed [ 'weinre', '' ]
 verbose addNamed [ null, '' ]
-verbose already installed in /Users/runaway/development/GitReponsitroies/canvas-video skipping express@
-verbose GET canvas
-verbose raw, before any munging canvas
-verbose url resolving [ 'https://registry.npmjs.org/', './canvas' ]
-verbose url resolved https://registry.npmjs.org/canvas
-verbose url parsed { protocol: 'https:',
-verbose url parsed   slashes: true,
-verbose url parsed   host: 'registry.npmjs.org',
-verbose url parsed   hostname: 'registry.npmjs.org',
-verbose url parsed   href: 'https://registry.npmjs.org/canvas',
-verbose url parsed   pathname: '/canvas' }
-verbose etag "CGK65L7COJ1S10TAULYTRQPT3"
-verbose already installed in /Users/runaway/development/GitReponsitroies/canvas-video skipping nodeunit@
-verbose already installed in /Users/runaway/development/GitReponsitroies/canvas-video skipping underscore@
-verbose response https://registry.npmjs.org/canvas
+silly name, range, hasData [ 'weinre', '', false ]
+verbose raw, before any munging weinre
+verbose url resolving [ 'https://registry.npmjs.org/', './weinre' ]
+verbose url resolved https://registry.npmjs.org/weinre
+verbose etag "CUI9318X7K4Z6H0VMBAIJ31HO"
+http GET https://registry.npmjs.org/weinre
+http 304 https://registry.npmjs.org/weinre
 silly get cb [ 304,
-silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
-silly get cb     etag: '"CGK65L7COJ1S10TAULYTRQPT3"',
-silly get cb     date: 'Sat, 22 Oct 2011 23:38:32 GMT',
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"CUI9318X7K4Z6H0VMBAIJ31HO"',
+silly get cb     date: 'Tue, 26 Jun 2012 11:28:01 GMT',
 silly get cb     'content-length': '0' } ]
-verbose etag canvas from cache
-verbose GET canvas/0.7.3
-verbose raw, before any munging canvas/0.7.3
-verbose url resolving [ 'https://registry.npmjs.org/', './canvas/0.7.3' ]
-verbose url resolved https://registry.npmjs.org/canvas/0.7.3
-verbose url parsed { protocol: 'https:',
-verbose url parsed   slashes: true,
-verbose url parsed   host: 'registry.npmjs.org',
-verbose url parsed   hostname: 'registry.npmjs.org',
-verbose url parsed   href: 'https://registry.npmjs.org/canvas/0.7.3',
-verbose url parsed   pathname: '/canvas/0.7.3' }
-verbose etag "CGK65L7COJ1S10TAULYTRQPT3"
-verbose response https://registry.npmjs.org/canvas/0.7.3
-silly get cb [ 304,
-silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
-silly get cb     etag: '"CGK65L7COJ1S10TAULYTRQPT3"',
-silly get cb     date: 'Sat, 22 Oct 2011 23:38:34 GMT',
-silly get cb     'content-length': '0' } ]
-verbose etag canvas/0.7.3 from cache
+verbose etag weinre from cache
+silly name, range, hasData 2 [ 'weinre', '', true ]
+silly versions [ 'weinre',
+silly versions   [ '2.0.0-pre-H0WTHDO5-incubating',
+silly versions     '2.0.0-pre-H1GCS73N-incubating',
+silly versions     '2.0.0-pre-H3FWTQKQ-incubating' ] ]
 verbose bin dist [ null,
-verbose bin dist   { shasum: '638e3c5596d2fb90bbfb891674a1bc898a376ff1',
-verbose bin dist     tarball: 'http://registry.npmjs.org/canvas/-/canvas-0.7.3.tgz' } ]
-verbose has wscript [ undefined,
-verbose has wscript   { file: '/Users/runaway/.npm/canvas/0.7.3/package/package.json',
-verbose has wscript     contributors: false,
-verbose has wscript     serverjs: false,
-verbose has wscript     wscript: true } ]
-silly testEngine { name: 'canvas',
-silly testEngine   description: 'Canvas graphics API backed by Cairo',
-silly testEngine   version: '0.7.3',
-silly testEngine   author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
-silly testEngine   keywords: [ 'canvas', 'graphic', 'graphics', 'pixman', 'cairo' ],
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/learnboost/node-canvas.git' },
-silly testEngine   scripts: { preinstall: 'node-waf configure build' },
-silly testEngine   devDependencies: { express: '2.3.7', expresso: '0.7.6', jade: '0.11.0' },
-silly testEngine   engines: { node: '>= 0.4.0 && < 0.6.0' },
-silly testEngine   main: './lib/canvas.js',
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/.npm/canvas/0.7.3/package/package.json',
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false,
-silly testEngine      wscript: true },
-silly testEngine   _id: 'canvas@0.7.3',
-silly testEngine   dependencies: {},
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/.npm/canvas/0.7.3/package/package.json
-verbose loadDefaults canvas@0.7.3
-silly resolved [ { name: 'canvas',
-silly resolved     description: 'Canvas graphics API backed by Cairo',
-silly resolved     version: '0.7.3',
-silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
-silly resolved     keywords: [ 'canvas', 'graphic', 'graphics', 'pixman', 'cairo' ],
+verbose bin dist   { shasum: '0e4ea8c53641b633720c3248a3b3606a7bdffb1e',
+verbose bin dist     tarball: 'http://registry.npmjs.org/weinre/-/weinre-2.0.0-pre-H3FWTQKQ-incubating.tgz' } ]
+verbose caching /Users/runaway/.npm/weinre/2.0.0-pre-H3FWTQKQ-incubating/package/package.json
+verbose loadDefaults weinre@2.0.0-pre-H3FWTQKQ-incubating
+silly resolved [ { name: 'weinre',
+silly resolved     description: 'WEb INspector REmote',
+silly resolved     author: { name: 'apache.org' },
+silly resolved     version: '2.0.0-pre-H3FWTQKQ-incubating',
+silly resolved     tags: [ 'debug' ],
+silly resolved     licenses: 
+silly resolved      [ { type: 'Apache 2.0',
+silly resolved          url: 'http://www.apache.org/licenses/LICENSE-2.0' } ],
+silly resolved     engines: { node: '>=0.6.0' },
+silly resolved     directories: { lib: './lib' },
+silly resolved     dependencies: 
+silly resolved      { 'coffee-script': '1.2.0',
+silly resolved        express: '2.5.7',
+silly resolved        nopt: '1.0.10',
+silly resolved        underscore: '1.3.1' },
+silly resolved     main: './lib/weinre',
+silly resolved     bin: { weinre: './weinre' },
+silly resolved     homepage: 'http://people.apache.org/~pmuellr/weinre/',
+silly resolved     bugs: { name: 'https://issues.apache.org/jira/secure/IssueNavigator.jspa?jqlQuery=project=CB+and+component=weinre' },
 silly resolved     repository: 
 silly resolved      { type: 'git',
-silly resolved        url: 'git://github.com/learnboost/node-canvas.git' },
-silly resolved     scripts: { preinstall: 'node-waf configure build' },
-silly resolved     devDependencies: { express: '2.3.7', expresso: '0.7.6', jade: '0.11.0' },
-silly resolved     engines: { node: '>= 0.4.0 && < 0.6.0' },
-silly resolved     main: './lib/canvas.js',
-silly resolved     _npmJsonOpts: 
-silly resolved      { file: '/Users/runaway/.npm/canvas/0.7.3/package/package.json',
-silly resolved        contributors: false,
-silly resolved        serverjs: false,
-silly resolved        wscript: true },
-silly resolved     _id: 'canvas@0.7.3',
-silly resolved     dependencies: {},
+silly resolved        url: 'https://git-wip-us.apache.org/repos/asf/incubator-cordova-weinre.git' },
+silly resolved     _id: 'weinre@2.0.0-pre-H3FWTQKQ-incubating',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
 silly resolved     _engineSupported: true,
-silly resolved     _npmVersion: '1.0.27',
-silly resolved     _nodeVersion: 'v0.5.0-pre',
-silly resolved     _defaultsLoaded: true } ]
-info into /Users/runaway/development/GitReponsitroies/canvas-video canvas@0.7.3
-info installOne canvas@0.7.3
-info unbuild /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas
-verbose from cache /Users/runaway/.npm/canvas/0.7.3/package/package.json
-verbose mkdir (expected) error ENOENT, No such file or directory '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm'
-verbose mkdir done: /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm 755
+silly resolved     _npmVersion: '1.1.2',
+silly resolved     _nodeVersion: 'v0.7.5-pre',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} } ]
+info into /Users/runaway/development/GitReponsitroies/lib weinre@2.0.0-pre-H3FWTQKQ-incubating
+info installOne weinre@2.0.0-pre-H3FWTQKQ-incubating
+info unbuild /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre
+verbose from cache /Users/runaway/.npm/weinre/2.0.0-pre-H3FWTQKQ-incubating/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm'
+verbose mkdir done: /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm 755
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas
+verbose unpackTarget /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre
 silly gunzTarPerm modes [ '755', '644' ]
-verbose success gzip "--decompress" "--stdout" "/Users/runaway/.npm/canvas/0.7.3/package.tgz"
-verbose success tar "-mvxpf" "-" "-o" "-C" "/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm"
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/.gitignore
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/.gitmodules
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/.npmignore
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/History.md
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/index.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/install
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/Makefile
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/package.json
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/Readme.md
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/wscript
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/benchmarks/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/benchmarks/run.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/lib/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/lib/canvas.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/lib/context2d.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/lib/image.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/lib/pixelarray.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/lib/pngstream.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/Canvas.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/Canvas.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/CanvasGradient.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/CanvasGradient.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/CanvasRenderingContext2d.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/CanvasRenderingContext2d.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/closure.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/color.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/color.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/Image.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/Image.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/ImageData.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/ImageData.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/init.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/PixelArray.cc
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/PixelArray.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/src/Point.h
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/clock.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/clock.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/globalAlpha.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/gradients.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/image-src.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/image-src.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/kraken.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/kraken.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/live-clock.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/ray.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/resize.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/rhill-voronoi-core-min.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/spark.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/state.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/text.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/text.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/voronoi.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/images/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/examples/images/squid.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/__template__.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/index.html
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/playback.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/server.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/test.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/test.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/video.webm
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/images/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/images/drupal.gif
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/black-marble.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/dark-green-marble.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/gif
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/happy.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/jpeg
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/testing/textures/onix-pina.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/canvas.test.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/image.test.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/server.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/fixtures/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/fixtures/clock.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/public/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/public/app.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/public/face.jpeg
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/public/state.png
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/public/style.css
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/public/tests.js
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/views/
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/views/layout.jade
-silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package/test/views/tests.jade
-verbose gunzed /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package
-verbose rm'ed /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas
-verbose renamed [ '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/___canvas.npm/package',
-verbose renamed   '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas' ]
-verbose has wscript [ undefined,
-verbose has wscript   { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas/package.json',
-verbose has wscript     contributors: false,
-verbose has wscript     serverjs: false,
-verbose has wscript     wscript: true } ]
-silly testEngine { name: 'canvas',
-silly testEngine   description: 'Canvas graphics API backed by Cairo',
-silly testEngine   version: '0.7.3',
-silly testEngine   author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
-silly testEngine   keywords: [ 'canvas', 'graphic', 'graphics', 'pixman', 'cairo' ],
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/learnboost/node-canvas.git' },
-silly testEngine   scripts: { preinstall: 'node-waf configure build' },
-silly testEngine   devDependencies: { express: '2.3.7', expresso: '0.7.6', jade: '0.11.0' },
-silly testEngine   engines: { node: '>= 0.4.0 && < 0.6.0' },
-silly testEngine   main: './lib/canvas.js',
-silly testEngine   _npmJsonOpts: 
-silly testEngine    { file: '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas/package.json',
-silly testEngine      contributors: false,
-silly testEngine      serverjs: false,
-silly testEngine      wscript: true },
-silly testEngine   _id: 'canvas@0.7.3',
-silly testEngine   dependencies: {},
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.27',
-silly testEngine   _nodeVersion: 'v0.5.0-pre',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas/package.json
-verbose loadDefaults canvas@0.7.3
-info preinstall canvas@0.7.3
-verbose unsafe-perm in lifecycle true
-silly exec sh "-c" "node-waf configure build"
-info canvas@0.7.3 Failed to exec preinstall script
-ERR! error installing canvas@0.7.3 Error: canvas@0.7.3 preinstall: `node-waf configure build`
-ERR! error installing canvas@0.7.3 `sh "-c" "node-waf configure build"` failed with 1
-ERR! error installing canvas@0.7.3     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
-ERR! error installing canvas@0.7.3     at ChildProcess.emit (events.js:67:17)
-ERR! error installing canvas@0.7.3     at ChildProcess.onexit (child_process.js:246:12)
-info unbuild /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas
-verbose from cache /Users/runaway/development/GitReponsitroies/canvas-video/node_modules/canvas/package.json
-info preuninstall canvas@0.7.3
-info uninstall canvas@0.7.3
-verbose unbuild canvas@0.7.3 [ false,
-verbose unbuild canvas@0.7.3   '/usr/local/lib/node_modules',
-verbose unbuild canvas@0.7.3   '/Users/runaway/development/GitReponsitroies/canvas-video/node_modules' ]
-info postuninstall canvas@0.7.3
-verbose installOne cb canvas@0.7.3
-ERR! canvas@0.7.3 preinstall: `node-waf configure build`
-ERR! `sh "-c" "node-waf configure build"` failed with 1
+silly afterUntar undefined
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/.npmignore
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/package.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/README.md
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/weinre
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/weinre-hot
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces/WeinreClientCommands.idl
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces/WeinreClientEvents.idl
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces/WeinreExtraClientCommands.idl
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces/WeinreExtraTargetEvents.idl
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces/WeinreTargetCommands.idl
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/interfaces/WeinreTargetEvents.idl
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/Channel.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/channelManager.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/cli.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/dumpingHandler.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/extensionManager.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/HttpChannelHandler.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/jsonBodyParser.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/messageHandler.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/MessageQueue.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/serviceManager.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/utils.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/weinre.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/service
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/service/WeinreClientCommands.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/lib/service/WeinreTargetCommands.coffee
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/index.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/index.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/modjewel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/versions.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/demo
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/demo/split.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/demo/weinre-demo-min.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/demo/weinre-demo.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/demo/weinre-demo.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/demo/weinre-demo.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/images
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/images/weinre-icon-128x128.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/images/weinre-icon-32x32.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/images/weinre-icon-64x64.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/all-json-idls-min.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/all-json-idls.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/InjectedScriptHost.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/Inspector.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/InspectorFrontendHost.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/interfaces.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/interfaces.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/interfaces.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/WeinreClientCommands.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/WeinreClientEvents.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/WeinreExtraClientCommands.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/WeinreExtraTargetEvents.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/WeinreTargetCommands.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/interfaces/WeinreTargetEvents.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/target
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/target/target-script-min.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/target/target-script.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/tests
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/tests/element-highlighter.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/tests/index.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/build-info.txt
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/Building.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/ChangeLog.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/Home.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/index.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/Installing.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/License.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/MultiUser.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/Running.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/Security.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/UserInterface.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/css/main.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-a.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-b.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-c.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-d.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-e.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-f.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-g.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-h.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-i.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/circled-j.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-console.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-elements.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-network.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-remote-console.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-remote.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-resources.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/panel-timeline.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/server-home.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/weinre-demo.jpg
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/weinre-icon-128x128.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/weinre-icon-512x512.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/images/weinre-icon-64x64.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/scripts
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/doc/scripts/main.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/Client.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/ConnectorList.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/DOMTemplates.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/ExtensionRegistryImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/InspectorBackendImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/InspectorFrontendHostImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/RemotePanel.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/WeinreClientEventsImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/client/WeinreExtraTargetEventsImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/Binding.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/Callback.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/Debug.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/EventListeners.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/Ex.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/HookLib.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/IDGenerator.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/IDLTools.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/MessageDispatcher.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/MethodNamer.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/StackTrace.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/WebSocketXhr.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/common/Weinre.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/CheckForProblems.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/Console.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/CSSStore.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/ElementHighlighter.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/ElementHighlighterDivs2.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/HookSites.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/InjectedScript.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/InjectedScriptHostImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/NetworkRequest.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/NodeStore.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/SqlStepper.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/Target.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/Timeline.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WeinreExtraClientCommandsImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WeinreTargetEventsImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiConsoleImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiCSSImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiDatabaseImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiDOMImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiDOMStorageImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiInspectorImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/weinre/target/WiRuntimeImpl.amd.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ApplicationCacheItemsView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/AuditCategories.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/AuditFormatters.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/AuditLauncherView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/AuditResultView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/AuditRules.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/audits.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/AuditsPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/BottomUpProfileDataGridTree.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Breakpoint.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/BreakpointManager.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/BreakpointsSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CallStackSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Checkbox.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Color.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ConsolePanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ConsoleView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ContextMenu.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CookieItemsView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CookieParser.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CookiesTable.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CSSCompletions.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CSSKeywordCompletions.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/CSSStyleModel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Database.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DatabaseQueryView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DatabaseTableView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DataGrid.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DebuggerModel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DetailedHeapshotView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DOMAgent.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DOMStorage.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DOMStorageItemsView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/DOMSyntaxHighlighter.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Drawer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ElementsPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ElementsTreeOutline.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/EventListenersSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionAPI.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionAPISchema.json
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionAuditCategory.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionCommon.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionRegistryStub.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ExtensionServer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/FontView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/goToLineDialog.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/GoToLineDialog.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/HAREntry.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/heapProfiler.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/HeapSnapshot.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/HeapSnapshotView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/helpScreen.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/HelpScreen.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ImageView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/index.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/InjectedFakeWorker.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/inspector.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/inspector.html
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/inspector.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/InspectorBackendStub.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/InspectorBackendStub.qrc
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/InspectorFrontendHostStub.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/inspectorSyntaxHighlight.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/KeyboardShortcut.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/MetricsSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/NetworkItemView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/NetworkManager.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/networkPanel.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/NetworkPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Object.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ObjectPropertiesSection.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Panel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/PanelEnablerView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Placard.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/PleaseWaitMessage.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/popover.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Popover.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ProfileDataGridTree.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ProfilesPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ProfileView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/PropertiesSection.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/PropertiesSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/RemoteObject.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Resource.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourceCategory.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourceCookiesView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourceHeadersView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourcesPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourceTimingView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourceTreeModel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ResourceView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ScopeChainSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Script.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ScriptFormatter.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ScriptFormatterWorker.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ScriptsPanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Section.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Settings.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ShortcutsHelp.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/ShowMoreDataGridNode.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SidebarTreeElement.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceCSSTokenizer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceCSSTokenizer.re2js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceFrame.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceFrameContent.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceHTMLTokenizer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceHTMLTokenizer.re2js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceJavaScriptTokenizer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceJavaScriptTokenizer.re2js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SourceTokenizer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/StatusBarButton.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/StylesSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/SummaryBar.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TabbedPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TestController.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TextEditorHighlighter.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TextEditorModel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TextPrompt.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/textViewer.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TextViewer.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TimelineAgent.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TimelineGrid.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TimelineOverviewPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TimelinePanel.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/TopDownProfileDataGridTree.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/treeoutline.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/utilities.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/View.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/WatchExpressionsSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/web-inspector-API.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/WebKit.qrc
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/WelcomeView.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/WorkersSidebarPane.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/UglifyJS
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/UglifyJS/parse-js.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/UglifyJS/process.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/applicationCache.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/auditsIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/back.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/breakpointBorder.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/breakpointConditionalBorder.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/breakpointConditionalCounterBorder.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/breakpointCounterBorder.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/breakpointsActivateButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/breakpointsDeactivateButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/checker.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/clearConsoleButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/closeButtons.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/consoleButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/consoleIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/cookie.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/database.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/databaseTable.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/debuggerContinue.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/debuggerPause.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/debuggerStepInto.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/debuggerStepOut.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/debuggerStepOver.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallDown.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallDownBlack.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallDownWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallRight.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallRightBlack.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallRightDown.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallRightDownBlack.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallRightDownWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/disclosureTriangleSmallRightWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/dockButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/elementsIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/enableOutlineButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/enableSolidButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/errorIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/errorMediumIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/errorRedDot.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/excludeButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/focusButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/forward.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/frame.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/gearButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/glossyHeader.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/glossyHeaderPressed.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/glossyHeaderSelected.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/glossyHeaderSelectedPressed.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/goArrow.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/graphLabelCalloutLeft.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/graphLabelCalloutRight.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/largerResourcesButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/localStorage.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/networkIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/nodeSearchButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/paneAddButtons.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/paneBottomGrow.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/paneBottomGrowActive.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/paneGrowHandleLine.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/paneSettingsButtons.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/pauseOnExceptionButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/percentButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/popoverArrows.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/popoverBackground.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/profileGroupIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/profileIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/profilesIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/profileSmallIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/profilesSilhouette.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/programCounterBorder.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/radioDot.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/recordButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/recordToggledButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/reloadButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourceCSSIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourceDocumentIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourceDocumentIconSmall.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourceJSIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourcePlainIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourcePlainIconSmall.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourcesIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourcesSizeGraphIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/resourcesTimeGraphIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/scriptsIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/scriptsSilhouette.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/searchSmallBlue.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/searchSmallBrightBlue.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/searchSmallGray.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/searchSmallWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/segment.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/segmentEnd.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/segmentHover.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/segmentHoverEnd.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/segmentSelected.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/segmentSelectedEnd.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/sessionStorage.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/spinner.gif
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/splitviewDimple.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/splitviewDividerBackground.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarBackground.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarBottomBackground.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarButtons.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarMenuButton.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarMenuButtonSelected.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarResizerHorizontal.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/statusbarResizerVertical.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/successGreenDot.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/thumbActiveHoriz.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/thumbActiveVert.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/thumbHoriz.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/thumbHoverHoriz.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/thumbHoverVert.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/thumbVert.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarBlue.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarGray.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarGreen.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarOrange.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarPurple.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarRed.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineBarYellow.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineCheckmarks.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineDots.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillBlue.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillGray.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillGreen.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillOrange.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillPurple.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillRed.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineHollowPillYellow.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelineIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillBlue.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillGray.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillGreen.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillOrange.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillPurple.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillRed.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/timelinePillYellow.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/toolbarItemSelected.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/trackHoriz.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/trackVert.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/treeDownTriangleBlack.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/treeDownTriangleWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/treeRightTriangleBlack.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/treeRightTriangleWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/treeUpTriangleBlack.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/treeUpTriangleWhite.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/undockButtonGlyph.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/userInputIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/userInputPreviousIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/userInputResultIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/warningIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/warningMediumIcon.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/warningOrangeDot.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/Images/warningsErrors.png
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/nls
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/nls/English.lproj
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/nls/English.lproj/localizedStrings.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/weinre
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/weinre/check-for-webkit.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/weinre/client.css
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/weinre/hacks.js
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/weinre/Images
+silly asyncMap in gTP /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package/web/client/weinre/Images/remoteIcon.png
+verbose gunzed /Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package
+verbose rm'ed /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre
+verbose renamed [ '/Users/runaway/development/GitReponsitroies/lib/node_modules/___weinre.npm/package',
+verbose renamed   '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre' ]
+verbose caching /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/package.json
+verbose loadDefaults weinre@2.0.0-pre-H3FWTQKQ-incubating
+info preinstall weinre@2.0.0-pre-H3FWTQKQ-incubating
+verbose from cache /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'coffee-script@1.2.0', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'coffee-script@1.2.0',
+silly cache add: name, spec, args   [ 'coffee-script@1.2.0', null ] ]
+verbose parsed url { pathname: 'coffee-script@1.2.0',
+verbose parsed url   path: 'coffee-script@1.2.0',
+verbose parsed url   href: 'coffee-script@1.2.0' }
+silly cache add: name, spec, args [ 'coffee-script', '1.2.0', [ 'coffee-script', '1.2.0' ] ]
+verbose parsed url { pathname: '1.2.0', path: '1.2.0', href: '1.2.0' }
+verbose addNamed [ 'coffee-script', '1.2.0' ]
+verbose addNamed [ '1.2.0', '1.2.0' ]
+verbose cache add [ 'express@2.5.7', null ]
+silly cache add: name, spec, args [ undefined, 'express@2.5.7', [ 'express@2.5.7', null ] ]
+verbose parsed url { pathname: 'express@2.5.7',
+verbose parsed url   path: 'express@2.5.7',
+verbose parsed url   href: 'express@2.5.7' }
+silly cache add: name, spec, args [ 'express', '2.5.7', [ 'express', '2.5.7' ] ]
+verbose parsed url { pathname: '2.5.7', path: '2.5.7', href: '2.5.7' }
+verbose addNamed [ 'express', '2.5.7' ]
+verbose addNamed [ '2.5.7', '2.5.7' ]
+verbose raw, before any munging coffee-script/1.2.0
+verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script/1.2.0' ]
+verbose url resolved https://registry.npmjs.org/coffee-script/1.2.0
+verbose etag "99UJ9NSZHU7W98C4J51K3D3AI"
+http GET https://registry.npmjs.org/coffee-script/1.2.0
+verbose cache add [ 'nopt@1.0.10', null ]
+silly cache add: name, spec, args [ undefined, 'nopt@1.0.10', [ 'nopt@1.0.10', null ] ]
+verbose parsed url { pathname: 'nopt@1.0.10',
+verbose parsed url   path: 'nopt@1.0.10',
+verbose parsed url   href: 'nopt@1.0.10' }
+silly cache add: name, spec, args [ 'nopt', '1.0.10', [ 'nopt', '1.0.10' ] ]
+verbose parsed url { pathname: '1.0.10', path: '1.0.10', href: '1.0.10' }
+verbose addNamed [ 'nopt', '1.0.10' ]
+verbose addNamed [ '1.0.10', '1.0.10' ]
+verbose raw, before any munging express/2.5.7
+verbose url resolving [ 'https://registry.npmjs.org/', './express/2.5.7' ]
+verbose url resolved https://registry.npmjs.org/express/2.5.7
+verbose etag "7E1PPIPRO70XIDPW8QXD9VSC9"
+http GET https://registry.npmjs.org/express/2.5.7
+verbose cache add [ 'underscore@1.3.1', null ]
+silly cache add: name, spec, args [ undefined, 'underscore@1.3.1', [ 'underscore@1.3.1', null ] ]
+verbose parsed url { pathname: 'underscore@1.3.1',
+verbose parsed url   path: 'underscore@1.3.1',
+verbose parsed url   href: 'underscore@1.3.1' }
+silly cache add: name, spec, args [ 'underscore', '1.3.1', [ 'underscore', '1.3.1' ] ]
+verbose parsed url { pathname: '1.3.1', path: '1.3.1', href: '1.3.1' }
+verbose addNamed [ 'underscore', '1.3.1' ]
+verbose addNamed [ '1.3.1', '1.3.1' ]
+verbose raw, before any munging nopt/1.0.10
+verbose url resolving [ 'https://registry.npmjs.org/', './nopt/1.0.10' ]
+verbose url resolved https://registry.npmjs.org/nopt/1.0.10
+verbose etag "JL6NI8XNZVFPVWFAIS74GVKC"
+http GET https://registry.npmjs.org/nopt/1.0.10
+verbose raw, before any munging underscore/1.3.1
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore/1.3.1' ]
+verbose url resolved https://registry.npmjs.org/underscore/1.3.1
+verbose etag "E1YFTWAJ6QFDJF0VC92621EYL"
+http GET https://registry.npmjs.org/underscore/1.3.1
+http 304 https://registry.npmjs.org/nopt/1.0.10
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"JL6NI8XNZVFPVWFAIS74GVKC"',
+silly get cb     date: 'Tue, 26 Jun 2012 11:28:04 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag nopt/1.0.10 from cache
+http 304 https://registry.npmjs.org/express/2.5.7
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"7E1PPIPRO70XIDPW8QXD9VSC9"',
+silly get cb     date: 'Tue, 26 Jun 2012 11:28:04 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag express/2.5.7 from cache
+verbose bin dist [ null,
+verbose bin dist   { shasum: '6ddd21bd2a31417b92727dd585f8a6f37608ebee',
+verbose bin dist     tarball: 'http://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz' } ]
+verbose bin dist [ null,
+verbose bin dist   { shasum: '9f8fa92be38cb3c11959e99e18806cda19fd359f',
+verbose bin dist     tarball: 'http://registry.npmjs.org/express/-/express-2.5.7.tgz' } ]
+verbose caching /Users/runaway/.npm/nopt/1.0.10/package/package.json
+verbose loadDefaults nopt@1.0.10
+verbose caching /Users/runaway/.npm/express/2.5.7/package/package.json
+verbose loadDefaults express@2.5.7
+http 304 https://registry.npmjs.org/coffee-script/1.2.0
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"99UJ9NSZHU7W98C4J51K3D3AI"',
+silly get cb     date: 'Tue, 26 Jun 2012 11:28:06 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag coffee-script/1.2.0 from cache
+verbose bin dist [ null,
+verbose bin dist   { shasum: 'b5e61e55f1ca8c4a9eb87d53aa0657ea43125b91',
+verbose bin dist     tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.2.0.tgz' } ]
+verbose caching /Users/runaway/.npm/coffee-script/1.2.0/package/package.json
+verbose loadDefaults coffee-script@1.2.0
+http 304 https://registry.npmjs.org/underscore/1.3.1
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"E1YFTWAJ6QFDJF0VC92621EYL"',
+silly get cb     date: 'Tue, 26 Jun 2012 11:28:06 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag underscore/1.3.1 from cache
+verbose bin dist [ null,
+verbose bin dist   { shasum: '6cb8aad0e77eb5dbbfb54b22bcd8697309cf9641',
+verbose bin dist     tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.3.1.tgz' } ]
+verbose caching /Users/runaway/.npm/underscore/1.3.1/package/package.json
+verbose loadDefaults underscore@1.3.1
+silly resolved [ { name: 'nopt',
+silly resolved     version: '1.0.10',
+silly resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+silly resolved     author: 
+silly resolved      { name: 'Isaac Z. Schlueter',
+silly resolved        email: 'i@izs.me',
+silly resolved        url: 'http://blog.izs.me/' },
+silly resolved     main: 'lib/nopt.js',
+silly resolved     scripts: { test: 'node lib/nopt.js' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/nopt.git' },
+silly resolved     bin: { nopt: './bin/nopt.js' },
+silly resolved     license: 
+silly resolved      { type: 'MIT',
+silly resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+silly resolved     dependencies: { abbrev: '1' },
+silly resolved     _id: 'nopt@1.0.10',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.2',
+silly resolved     _nodeVersion: 'v0.7.5-pre',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { name: 'express',
+silly resolved     description: 'Sinatra inspired web development framework',
+silly resolved     version: '2.5.7',
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved        { name: 'Aaron Heckmann',
+silly resolved          email: 'aaron.heckmann+github@gmail.com' },
+silly resolved        { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly resolved        { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly resolved     dependencies: 
+silly resolved      { connect: '1.x',
+silly resolved        mime: '>= 0.0.1',
+silly resolved        qs: '>= 0.3.1',
+silly resolved        mkdirp: '0.0.7' },
+silly resolved     devDependencies: 
+silly resolved      { 'connect-form': '0.2.1',
+silly resolved        ejs: '0.4.2',
+silly resolved        expresso: '0.9.2',
+silly resolved        hamljs: '0.6.x',
+silly resolved        jade: '0.16.2',
+silly resolved        stylus: '0.13.0',
+silly resolved        should: '0.3.2',
+silly resolved        'express-messages': '0.0.2',
+silly resolved        'node-markdown': '>= 0.0.1',
+silly resolved        'connect-redis': '>= 0.0.1' },
+silly resolved     keywords: [ 'framework', 'sinatra', 'web', 'rest', 'restful' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express.git' },
+silly resolved     main: 'index',
+silly resolved     bin: { express: './bin/express' },
+silly resolved     scripts: { test: 'make test', prepublish: 'npm prune' },
+silly resolved     engines: { node: '>= 0.4.1 < 0.7.0' },
+silly resolved     _id: 'express@2.5.7',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: false,
+silly resolved     _npmVersion: '1.1.2',
+silly resolved     _nodeVersion: 'v0.7.5-pre',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { name: 'coffee-script',
+silly resolved     description: 'Unfancy JavaScript',
+silly resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+silly resolved     author: { name: 'Jeremy Ashkenas' },
+silly resolved     version: '1.2.0',
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/jashkenas/coffee-script/raw/master/LICENSE' } ],
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     directories: { lib: './lib/coffee-script' },
+silly resolved     main: './lib/coffee-script/coffee-script',
+silly resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+silly resolved     homepage: 'http://coffeescript.org',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/jashkenas/coffee-script.git' },
+silly resolved     devDependencies: { 'uglify-js': '>=1.0.0', jison: '>=0.2.0' },
+silly resolved     _id: 'coffee-script@1.2.0',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.2',
+silly resolved     _nodeVersion: 'v0.7.5-pre',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { name: 'underscore',
+silly resolved     description: 'JavaScript\'s functional programming helper library.',
+silly resolved     homepage: 'http://documentcloud.github.com/underscore/',
+silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/documentcloud/underscore.git' },
+silly resolved     main: 'underscore.js',
+silly resolved     version: '1.3.1',
+silly resolved     _id: 'underscore@1.3.1',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.2',
+silly resolved     _nodeVersion: 'v0.7.5-pre',
+silly resolved     _defaultsLoaded: true } ]
+info into /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre nopt@1.0.10
+info into /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre express@2.5.7
+info into /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre coffee-script@1.2.0
+info into /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre underscore@1.3.1
+info installOne nopt@1.0.10
+info installOne express@2.5.7
+verbose installOne cb express@2.5.7
+verbose about to build /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre
+ERR! error installing weinre@2.0.0-pre-H3FWTQKQ-incubating
+info unbuild /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre
+verbose from cache /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/package.json
+info preuninstall weinre@2.0.0-pre-H3FWTQKQ-incubating
+info installOne coffee-script@1.2.0
+info installOne underscore@1.3.1
+info unbuild /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/nopt
+info unbuild /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/coffee-script
+info unbuild /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/underscore
+info uninstall weinre@2.0.0-pre-H3FWTQKQ-incubating
+verbose unbuild weinre@2.0.0-pre-H3FWTQKQ-incubating [ true,
+verbose unbuild weinre@2.0.0-pre-H3FWTQKQ-incubating   '/Users/runaway/development/GitReponsitroies/lib/node_modules',
+verbose unbuild weinre@2.0.0-pre-H3FWTQKQ-incubating   '/Users/runaway/development/GitReponsitroies/lib/node_modules' ]
+verbose binRoot [ '/Users/runaway/development/GitReponsitroies/bin',
+verbose binRoot   { weinre: './weinre' } ]
+verbose from cache /Users/runaway/.npm/nopt/1.0.10/package/package.json
+verbose from cache /Users/runaway/.npm/coffee-script/1.2.0/package/package.json
+verbose from cache /Users/runaway/.npm/underscore/1.3.1/package/package.json
+info postuninstall weinre@2.0.0-pre-H3FWTQKQ-incubating
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/___nopt.npm'
+verbose mkdir done: /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/___nopt.npm 755
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/___underscore.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/___coffee-script.npm'
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/nopt
+silly gunzTarPerm modes [ '755', '644' ]
+verbose mkdir done: /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/___underscore.npm 755
+verbose mkdir done: /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/___coffee-script.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/underscore
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/runaway/development/GitReponsitroies/lib/node_modules/weinre/node_modules/coffee-script
+silly gunzTarPerm modes [ '755', '644' ]
+ERR! error rolling back weinre@2.0.0-pre-H3FWTQKQ-incubating Error: UNKNOWN, unknown error '/Users/runaway/development/GitReponsitroies/lib/node_modules/weinre'
+verbose installOne cb weinre@2.0.0-pre-H3FWTQKQ-incubating
+ERR! Unsupported
+ERR! Not compatible with your version of node/npm: express@2.5.7
+ERR! Required: {"node":">= 0.4.1 < 0.7.0"}
+ERR! Actual:   {"npm":"1.1.2","node":"0.7.5-pre"}
 ERR! 
-ERR! Failed at the canvas@0.7.3 preinstall script.
-ERR! This is most likely a problem with the canvas package,
-ERR! not with npm itself.
-ERR! Tell the author that this fails on your system:
-ERR!     node-waf configure build
-ERR! You can get their info via:
-ERR!     npm owner ls canvas
-ERR! There is likely additional logging output above.
-ERR! 
-ERR! System Darwin 11.0.0
-ERR! command "node" "/usr/local/bin/npm" "install"
-ERR! cwd /Users/runaway/development/GitReponsitroies/canvas-video
-ERR! node -v v0.5.0-pre
-ERR! npm -v 1.0.27
+ERR! System Darwin 11.3.0
+ERR! command "/Users/runaway/development/GitReponsitroies/noti_holy/node" "/usr/local/bin/npm" "-g" "install" "weinre"
+ERR! cwd /Users/runaway/development/GitReponsitroies/noti_holy
+ERR! node -v v0.7.5-pre
+ERR! npm -v 1.1.2
+ERR! code ENOTSUP
+ERR! message Unsupported
+ERR! errno {}
 verbose exit [ 1, true ]

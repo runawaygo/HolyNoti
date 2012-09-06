@@ -19,6 +19,7 @@
 
 	<div id="app"></div>
 	<div id="debug-container"></div>		
+	<input id="edit"  value = 'superwolf'/>
 	<!-- <ul class="item-list">
 		<li><div>superwolf1<div class="delete-line" /></div></li>
 	</ul> -->
@@ -27,28 +28,44 @@
 
 
 
-<script id="listTemplate" type="text/x-jquery-tmpl">
-	<section class="edited">
-		<div>
-			<%= title%>
-			<div class="delete-line"></div>
-		</div>
-		<div class="count"><%= count%></div>
-	</section>
-	<section class="editing">
-		<input value="<%= title%>" />	
-	</section>
+<script id="personTemplate" type="text/x-jquery-tmpl">
 </script>
 <script src="lib/less.js" type="text/javascript" charset="utf-8"></script>
 <script src="lib/coffee-script.js" type="text/javascript" charset="utf-8"></script>
 <script src="lib/json2.js" type="text/javascript" charset="utf-8"></script>
-<!-- <script src="lib/move.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="lib/move.js" type="text/javascript" charset="utf-8"></script>
 
 <script src="lib/zepto.js" type="text/javascript" charset="utf-8"></script>
 <script src="lib/underscore-1.3.1.js" type="text/javascript" charset="utf-8"></script>
 <script src="lib/backbone.js" type="text/javascript" charset="utf-8"></script>
 <script src="lib/backbone-localstorage.js" type="text/javascript" charset="utf-8"></script>
 
+<!-- <script src="lib/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/underscore-1.3.1.js'" type="text/javascript" charset="utf-8"></script>
+<script src="lib/backbone.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/backbone-localstorage.js" type="text/javascript" charset="utf-8"></script>
 
-<script src="seajs/sea-debug.js" data-main="./index"></script>
+<script src="bootstrap/js/bootstrap-transition.js"></script>
+<script src="bootstrap/js/bootstrap-alert.js"></script>
+<script src="bootstrap/js/bootstrap-modal.js"></script>
+<script src="bootstrap/js/bootstrap-dropdown.js"></script>
+<script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+<script src="bootstrap/js/bootstrap-tab.js"></script>
+<script src="bootstrap/js/bootstrap-tooltip.js"></script>
+<script src="bootstrap/js/bootstrap-popover.js"></script>
+<script src="bootstrap/js/bootstrap-button.js"></script>
+<script src="bootstrap/js/bootstrap-collapse.js"></script>
+<script src="bootstrap/js/bootstrap-carousel.js"></script>
+<script src="bootstrap/js/bootstrap-typeahead.js"></script> -->
+
+<script>
+	$(function(){
+		// $('#edit').blur(function(){
+		// 	
+		// })
+		$(document).delegate('#edit','blur',function(){
+			alert('superwolf');
+		})
+	})
+</script>
 </html>

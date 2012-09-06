@@ -3,7 +3,7 @@
  * @fileoverview The CoffeeScript plugin.
  */
 
-define('plugin-coffee', ['plugin-base'], function(require) {
+define('plugin-coffee', ['plugin-base', 'coffee'], function(require) {
 
   var plugin = require('plugin-base');
   var CoffeeScript = window.CoffeeScript;
@@ -12,10 +12,10 @@ define('plugin-coffee', ['plugin-base'], function(require) {
   plugin.add({
     name: 'coffee',
 
-    ext: ['.coffee', '#coffee'],
+    ext: ['.coffee'],
 
     load: function(url, callback) {
-      return CoffeeScript.load(url, callback);
+      CoffeeScript.load(url, callback);
     }
   });
 

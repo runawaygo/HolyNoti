@@ -16,4 +16,4 @@ app = connect()
 app
 .use('/', connect.static(__dirname + '/client/'))
 .use('/client', connect.static(__dirname + '/client/'))
-
+.use('/#*', connect.static(__dirname + '/client/index.html'))
