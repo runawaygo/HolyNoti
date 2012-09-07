@@ -18,5 +18,4 @@ define (require,exports)->
 		catch error
 			console.log error
 			alert(error)
-		
 	)
