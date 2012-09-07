@@ -13,5 +13,9 @@ define(function(require) {
 	console.log('seajs start');	
 
 	require('index.coffee');	
-	require('index.less');
+
+	setTimeout(function(){
+		console.log($('#app').width());
+		console.log($('#app').offset().left);
+	},1000)
 });

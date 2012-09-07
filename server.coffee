@@ -1,6 +1,6 @@
 connect = require('connect');
 
-port = process.env.PORT || 8000;
+port = process.env.PORT || 8001;
 console.log("service run on " + port);
 
 
@@ -11,9 +11,8 @@ app = connect()
 .use(connect.session({ secret: 'superwolf' }))
 .use(connect.errorHandler({ dumpExceptions: true, showStack: true }))
 .use(connect.bodyParser())
-.listen(port)
-
-app
 .use('/', connect.static(__dirname + '/client/'))
 .use('/client', connect.static(__dirname + '/client/'))
 .use('/#*', connect.static(__dirname + '/client/index.html'))
+.listen(port)
+

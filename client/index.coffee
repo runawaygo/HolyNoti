@@ -11,7 +11,6 @@ define (require,exports)->
 			$eLogContainer[0].innerHTML += '<br/>' + str
 			
 	$(->
-		console.log 'coffee start'
 		dutyStaff()
 		try
 			app = new App()

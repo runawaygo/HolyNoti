@@ -209,7 +209,7 @@ define (require, exports)->
 		className:'list-list'
 		events:
 			'doubleTap'			:'_doubleTap'
-			'dblclick'			:'_doubleTap'
+			# 'dblclick'			:'_doubleTap'
 			'touchstart'	:'_touchstart'
 			'touchend'		:'_touchend'
 			'touchmove'		:'_touchmove'
@@ -460,9 +460,15 @@ define (require, exports)->
 			@options.eventBus.on('returnHome',@renderListCollection)
 		
 		renderByListId:(listId)=>
-			@$el.html('')
-			@$el.append(@itemCollectionView.renderByListId(listId).el)
-			Backbone.history.navigate('/list/'+listId,{trigger:false, replace:false})
+			@listCollectionView.$el.addClass('bounceOutUp animated')
+			setTimeout(()=>
+				@listCollectionView.$el.removeClass('bounceOutUp animated')
+				@$el.html('')
+				@$el.append(@itemCollectionView.renderByListId(listId).el)
+				@itemCollectionView.$el.addClass('fadeInDown animated')
+				Backbone.history.navigate('/list/'+listId,{trigger:false, replace:false})
+			,500)
+			
 
 		renderListCollection:=>
 			@$el.html('')			
